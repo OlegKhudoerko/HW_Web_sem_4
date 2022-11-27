@@ -1,11 +1,10 @@
 <?php
 $works = [
-    'nameWork' => ['Front End Developer', 'Web Developer / something.com', 'Graphic Designer / designsomething.com'],
+    'nameWork' => ['Разработчик интерфейса', 'Веб-разработчик', ''],
     'dateStart' => ['Jan 2015 - ', 'Mar 2012 - ', 'Jun 2010 - '],
     'dateEnd' => ['Current', 'Dec 2014', 'Mar 2012'],
-    'description' => ['Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.', 'Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.', 'Lorem Dec 2014ipsum dolor sit amet, consectetur adipisicing elit.']
+    'description' => ['Cоздаёт пользовательский интерфейс. Разрабатывает внешний облик сайтов и мобильных приложений, проектирует пользовательский опыт, проводит исследования и анализирует целевую аудиторию.', 'Создает новые сервисы и сайты или поддерживает и дополняет существующие.', 'Занимается графикой (рекламой, иконками, баннерами, и т.д.), которая служит коммуникацией между брендом и пользователем, доносит до клиентов определенное сообщение.']
 ]
-
 
     ?>
 
@@ -119,7 +118,7 @@ $works = [
                     <?php for ($i = 0; $i < (count($works) - 1); $i++): ?>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>
-                                <?php echo $works['nameWorks'][i] ?>
+                                <?php echo $works['nameWork'][$i]; ?>
                             </b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
                             <?php echo $works['dateStart'][$i]; ?>
